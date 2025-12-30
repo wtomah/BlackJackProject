@@ -1,5 +1,5 @@
-### BlackJack Project
-# Programming Languages
+# BlackJack Project
+## Programming Languages
 - Python
 
 ## Description
