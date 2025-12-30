@@ -100,7 +100,19 @@ class BlackJack:
         if balance == 0:
             print("Game Over!")
             quit()
+    def get_start_choice():
+        choice = input("Do you want to play a game of Blackjack? (y/n): ")
+        if choice in ('y'):
+            return choice
+        elif choice in ('n'):
+            print(f"You have left with ${balance}. Thank you for playing!")
+        else:
+            print("Invalid input. Please enter 'y' or 'n'.")
+            return BlackJack.get_start_choice()
 
+        
+start = BlackJack.get_start_choice()
 
-while input("Do you want to play a game of Blackjack? (y/n): ") == 'y':
+while start == 'y':
     BlackJack.play_game()
+    start = BlackJack.get_start_choice()

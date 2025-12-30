@@ -22,5 +22,10 @@ class TestBlackJack(unittest.TestCase):
         opponent_score = 19
         self.assertEqual(BlackJack.compare(user_score, opponent_score), "It's a draw!")
 
+    def test_start(self):
+        input = '9'
+        self.assertEqual(BlackJack.get_start_choice(input), "Invalid input. Please enter 'y' or 'n'.")
+    
+
 if __name__ == '__main__':
     unittest.main()
