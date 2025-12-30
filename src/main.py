@@ -49,7 +49,7 @@ class BlackJack:
             if bet <= 0 or bet > balance:
                 raise ValueError
         except ValueError:
-            print("Invalid bet.")
+            print("Invalid bet. Try again!")
             return
 
         user_hand = []
